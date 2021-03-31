@@ -1,5 +1,6 @@
 # V5 table?
 # default is uint16LE
+# checksum - add all bytes, exept first, last, and checksum itself, than mod 256
 HEX     DEC VALUE
 0x00    0   always a5
 0x01    1   always 97 (msg type - data?)
@@ -163,5 +164,5 @@ HEX     DEC VALUE
 0x9F    159 always 01?
 0xA0    160 always 00
 0xA1    161 always 00
-0xA2    162 ?
+0xA2    162 checksum
 0xA3    163 always 15

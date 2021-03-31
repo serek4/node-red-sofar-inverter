@@ -1,5 +1,6 @@
 # V5 table?
 # default is uint16LE
+# checksum - add all bytes, exept first, last, and checksum itself, than mod 256
 HEX     DEC VALUE
 0x00    0   always a5
 0x01    1   always 0A (msg type - srv response?)
@@ -22,5 +23,5 @@ HEX     DEC VALUE
 0x12    18  always 00
 0x13    19  always 00
 0x14    20  always 00
-0x15    21  ?
+0x15    21  checksum
 0x16    22  always 15

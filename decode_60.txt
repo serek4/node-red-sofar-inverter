@@ -1,5 +1,6 @@
 # V5 table?
 # default is uint16LE
+# checksum - add all bytes, exept first, last, and checksum itself, than mod 256
 HEX     DEC VALUE
 0x00    0   always a5
 0x01    1   always 2F (msg type -?)
@@ -59,5 +60,5 @@ HEX     DEC VALUE
 0x24    55  wifi ssid - string
 0x38    56  ?
 0x39    57  always 01 ?
-0x3A    58  ?
+0x3A    58  checksum
 0x3B    59  always 15
