@@ -1,0 +1,26 @@
+# V5 table?
+# default is uint16LE
+HEX     DEC VALUE
+0x00    0   always a5
+0x01    1   always 0A (msg type - srv response?)
+0x02    2   always 00
+0x03    3   always 10
+0x04    4   msg type cd? request dependand: 41->11, 42->12, 43->13, 47->17, 48->18
+0x05    5   message nr? req + 1? - uInt8
+0x06    6   message nr? maches req - uInt8
+0x07    7   data loger SN - uInt32LE
+0x08    8   data loger SN
+0x09    9   data loger SN
+0x0A    10  data loger SN
+0x0B    11  always matches request
+0x0C    12  always 01
+0x0D    13  timestamp(in sec) - uInt32LE
+0x0E    14  timestamp(in sec)
+0x0F    15  timestamp(in sec)
+0x10    16  timestamp(in sec)
+0x11    17  always 78
+0x12    18  always 00
+0x13    19  always 00
+0x14    20  always 00
+0x15    21  ?
+0x16    22  always 15

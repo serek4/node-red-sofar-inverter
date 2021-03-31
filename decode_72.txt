@@ -1,0 +1,76 @@
+# V5 table?
+# default is uint16LE
+HEX     DEC VALUE
+0x00    0   always a5
+0x01    1   always 3C (msg type -?)
+0x02    2   always 00
+0x03    3   always 10
+0x04    4   always 48 (msg type cd?)
+0x05    5   message nr? starts from 00(synced with server?)- uInt8
+0x06    6   message nr? starts from 01 - uInt8
+0x07    7   data loger SN - uInt32LE
+0x08    8   data loger SN
+0x09    9   data loger SN
+0x0A    10  data loger SN
+0x0B    11  always 01?
+0x0C    12  run time? - uInt32LE
+0x0D    13  run time?
+0x0E    14  run time?
+0x0F    15  run time?
+0x10    16  ?
+0x11    17  always 00
+0x12    18  always 00
+0x13    19  always 00
+0x14    20  ?
+0x15    21  ?
+0x16    22  ?
+0x17    23  ?
+0x18    24  ?
+0x19    25  ?
+0x1A    26  ?
+0x1B    27  always FF
+0x1C    28  always FF
+0x1D    29  always FF
+0x1E    30  always FF
+0x1F    31  always FF
+0x20    32  always FF
+0x21    33  always FF
+0x22    34  always FF
+0x23    35  always FF
+0x24    36  always FF
+0x25    37  always FF
+0x26    38  always FF
+0x27    39  always FF
+0x28    40  always FF
+0x29    41  always FF
+0x2A    42  always FF
+0x2B    43  always FF
+0x2C    44  always FF
+0x2D    45  always FF
+0x2E    46  always FF
+0x2F    47  always FF
+0x30    48  always FF
+0x31    49  always FF
+0x32    50  always FF
+0x33    51  always FF
+0x34    52  always FF
+0x35    53  always FF
+0x36    54  always FF
+0x37    55  always FF
+0x38    56  always FF
+0x39    57  always FF
+0x3A    58  always FF
+0x3B    59  always FF
+0x3C    60  always FF
+0x3D    61  always FF
+0x3E    62  always FF
+0x3F    63  always FF
+0x40    64  always FF
+0x41    65  always FF
+0x42    66  always FF
+0x43    67  always FF
+0x44    68  always FF
+0x45    69  always FF
+0x46    70  always FF
+0x47    71  ?
+0x48    72  always 15
