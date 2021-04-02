@@ -6,29 +6,29 @@ HEX     DEC VALUE
 0x01    1   always 3C (msg type -?)
 0x02    2   always 00
 0x03    3   always 10
-0x04    4   always 48 (msg type cd?)
-0x05    5   message nr? starts from 00(synced with server?)- uInt8
-0x06    6   message nr? starts from 01 - uInt8
+0x04    4   always 48 (msg type cd - ?)
+0x05    5   message nr starts from 00(synced with server?)- uInt8
+0x06    6   message nr starts from 01 - uInt8
 0x07    7   data loger SN - uInt32LE
 0x08    8   data loger SN
 0x09    9   data loger SN
 0x0A    10  data loger SN
-0x0B    11  always 01?
-0x0C    12  run time? - uInt32LE
-0x0D    13  run time?
-0x0E    14  run time?
-0x0F    15  run time?
+0x0B    11  always 01
+0x0C    12  total operation time? - uInt32LE
+0x0D    13  total operation time?
+0x0E    14  total operation time?
+0x0F    15  total operation time?
 0x10    16  ?
 0x11    17  always 00
 0x12    18  always 00
 0x13    19  always 00
-0x14    20  ?
-0x15    21  ?
-0x16    22  ?
-0x17    23  ?
-0x18    24  ?
-0x19    25  ?
-0x1A    26  ?
+0x14    20  ? timestamp 5x? - 15-03-2021 15:46:55? - uInt32LE
+0x15    21  ? timestamp 73
+0x16    22  ? timestamp 4F
+0x17    23  ? timestamp 60
+0x18    24  always 01
+0x19    25  always 05
+0x1A    26  always 2C
 0x1B    27  always FF
 0x1C    28  always FF
 0x1D    29  always FF

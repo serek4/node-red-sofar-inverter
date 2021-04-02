@@ -3,37 +3,37 @@
 # checksum - add all bytes, exept first, last, and checksum itself, than mod 256
 HEX     DEC VALUE
 0x00    0   always a5
-0x01    1   always 97 (msg type - data?)
+0x01    1   always 97 (msg type - data)
 0x02    2   always 00
 0x03    3   always 10
-0x04    3   always 42 (msg type cd?)
-0x05    5   message nr? starts from 00(synced with server?)- uInt8
-0x06    6   message nr? starts from 01 - uInt8
+0x04    3   always 42 (msg type cd - data)
+0x05    5   message nr starts from 00(synced with server?)- uInt8
+0x06    6   message nr starts from 01 - uInt8
 0x07    7   data loger SN - uInt32LE
 0x08    8   data loger SN
 0x09    9   data loger SN
 0x0A    10  data loger SN
-0x0B    11  always 01? 81
-0x0C    12  always 01?
-0x0D    13  always 27?
+0x0B    11  always 01 (81?)
+0x0C    12  always 01
+0x0D    13  always 27
 0x0E    14  ?
-0x0F    15  ?
-0x10    16  slow incressing?
-0x11    17  always 00?
-0x12    18  always 00?
-0x13    19  always 00?
-0x14    20  always 00?
-0x15    21  always 00?
-0x16    22  timestamp of something?
-0x17    23  timestamp of something?
-0x18    24  timestamp of something?
-0x19    25  timestamp of something?
-0x1A    26  always 01?
-0x1B    27  always 00?
-0x1C    28  incressing?
-0x1D    29  always 13?
-0x1E    30  always 00?
-0x1F    31  always 00?
+0x0F    15  incressing by 1 every msg - uInt16LE
+0x10    16  incressing by 1 every msg
+0x11    17  always 00
+0x12    18  timer?  every ~306s? - uInt16LE (or uInt32LE?), reset after F429(3h intarval?) 41 and 73 msgs sended after?
+0x13    19  incressing by 1 every msg?
+0x14    20  always 00
+0x15    21  always 00
+0x16    22  timestamp? 5x? - 15-03-21 15:46:52? - uInt32LE
+0x17    23  timestamp? 73
+0x18    24  timestamp? 4F
+0x19    25  timestamp? 60
+0x1A    26  always 01
+0x1B    27  always 00
+0x1C    28  incressing by 1 every msg - uInt16LE (or uInt32LE?)
+0x1D    29  incressing by 1 every msg
+0x1E    30  always 00
+0x1F    31  always 00
 0x20    32  inverter SN - string(14 or 16?)
 0x21    33  inverter SN - string
 0x22    34  inverter SN - string
@@ -48,10 +48,10 @@ HEX     DEC VALUE
 0x2B    43  inverter SN - string
 0x2C    44  inverter SN - string
 0x2D    45  inverter SN - string
-0x2E    46  inverter SN - string space?
-0x2F    47  inverter SN - string space?
-0x30    48  ?
-0x31    49  ?
+0x2E    46  inverter SN - string [space]
+0x2F    47  inverter SN - string [space]
+0x30    48  inverter temperature (°C)/10 - int16LE
+0x31    49  inverter temperature (°C)/10
 0x32    50  VDC1/10 (V)
 0x33    51  VDC1/10 (V)
 0x34    52  VDC2/10 (V)
@@ -90,7 +90,7 @@ HEX     DEC VALUE
 0x55    85  total time (h)
 0x56    86  total time (h)
 0x57    87  total time (h)
-0x58    88  always 02?
+0x58    88  always 02
 0x59    89  always 00
 0x5A    90  always 00
 0x5B    91  always 00
@@ -114,38 +114,38 @@ HEX     DEC VALUE
 0x6D    109 always V100? - string
 0x6E    110 always V100? - string
 0x6F    111 always V100? - string
-0x70    112 temperature (°C) - int16LE ?
-0x71    113 temperature (°C)
-0x72    114 Vbus/10 (V)
-0x73    115 Vbus/10 (V)
-0x74    116 V backup CPU1/10 (V)
-0x75    117 V backup CPU1/10
-0x76    118 ?
-0x77    119 ?
-0x78    120 counting time?
-0x79    121 counting time?
-0x7A    122 ?
-0x7B    123 ?
-0x7C    124 PV1 resistance
-0x7D    125 PV1 resistance
-0x7E    126 PV2 resistance
-0x7F    127 PV2 resistance
-0x80    128 catod-ground impedance
-0x81    129 catod-ground impedance
-0x82    130 always 0C?
+0x70    112 logger temperature (°C) - int16LE?
+0x71    113 logger temperature (°C)
+0x72    114 Bus voltage/10 (V)
+0x73    115 Bus voltage/10 (V)
+0x74    116 Vice CPU input voltage/10 (V)
+0x75    117 Vice CPU input voltage/10
+0x76    118 ? value around 800 - uint16LE
+0x77    119 ? value around 800
+0x78    120 countdown time(60h - 0x3C00)
+0x79    121 countdown time
+0x7A    122 always 01
+0x7B    123 always 00
+0x7C    124 PV1 insulation resistance
+0x7D    125 PV1 insulation resistance
+0x7E    126 PV2 insulation resistance
+0x7F    127 PV2 insulation resistance
+0x80    128 insulation impedance - catode to ground
+0x81    129 insulation impedance - catode to ground
+0x82    130 always 0C
 0x83    131 always 00
 0x84    132 always 00
 0x85    133 always 00
 0x86    134 always 00
 0x87    134 always 00
-0x88    134 leakage current?
-0x89    134 leakage current?
-0x8A    138 DC phase A distribution
-0x8B    139 DC phase A distribution
-0x8C    140 DC phase B distribution
-0x8D    141 DC phase B distribution
-0x8E    142 DC phase C distribution
-0x8F    143 DC phase C distribution
+0x88    134 leaking current
+0x89    134 leaking current
+0x8A    138 A-phase DC distribution
+0x8B    139 A-phase DC distribution
+0x8C    140 B-phase DC distribution
+0x8D    141 B-phase DC distribution
+0x8E    142 C-phase DC distribution
+0x8F    143 C-phase DC distribution
 0x90    144 inverter firmware? - string (4)
 0x91    145 inverter firmware? - string
 0x92    146 inverter firmware? - string
@@ -160,8 +160,8 @@ HEX     DEC VALUE
 0x9B    155 hour - int8
 0x9C    156 minute - int8
 0x9D    157 second - int8
-0x9E    158 ?
-0x9F    159 always 01?
+0x9E    158 ? counting up but not regular - uint16LE (or uInt32LE?)
+0x9F    159 ? counting up but not regular
 0xA0    160 always 00
 0xA1    161 always 00
 0xA2    162 checksum

@@ -3,22 +3,22 @@
 # checksum - add all bytes, exept first, last, and checksum itself, than mod 256
 HEX     DEC VALUE
 0x00    0   always a5
-0x01    1   always 56 (msg type - hello msg?)
+0x01    1   always 56 (msg type - hello msg)
 0x02    2   always 00
 0x03    3   always 10
-0x04    4   always 41 (msg type cd?)
-0x05    5   message nr? starts from 00(synced with server?)- uInt8
-0x06    6   message nr? starts from 01 - uInt8
+0x04    4   always 41 (msg type cd - hello msg)
+0x05    5   message nr starts from 00(synced with server?)- uInt8
+0x06    6   message nr starts from 01 - uInt8
 0x07    7   data loger SN - uInt32LE
 0x08    8   data loger SN
 0x09    9   data loger SN
 0x0A    10  data loger SN
-0x0B    11  always 02?
-0x0C    12  run time - uInt32LE
-0x0D    13  run time
-0x0E    14  run time
-0x0F    15  run time
-0x10    16  ?
+0x0B    11  always 02
+0x0C    12  total operation time - uInt32LE
+0x0D    13  total operation time
+0x0E    14  total operation time
+0x0F    15  total operation time
+0x10    16  power-on time?
 0x11    17  always 00
 0x12    18  always 00
 0x13    19  always 00
@@ -26,10 +26,10 @@ HEX     DEC VALUE
 0x15    21  always 00
 0x16    22  always 00
 0x17    23  always 00
-0x18    24  upload frequency (min) - uInt8
-0x19    25  update frequency (sec) - uInt8
+0x18    24  uploading frequency (min) - uInt8
+0x19    25  data logging frequency (sec) - uInt8
 0x1A    26  heartbeat frequency (sec) - uInt8
-0x1B    27  max devices or command type - uInt8
+0x1B    27  max nr of connected devices or command type - uInt8
 0x1C    28  signal quality? - uInt8
 0x1D    29  sensor type nr? - uInt8
 0x1E    30  module version - string(39?) padded with 00 at end
@@ -78,7 +78,7 @@ HEX     DEC VALUE
 0x49    73  STA mac addres
 0x4A    74  STA mac addres
 0x4B    75  STA mac addres
-0x4C    76  local IP - string(15?)
+0x4C    76  local IP - string(15?) padded with 00 at end
 0x4D    77  local IP - string
 0x4E    78  local IP - string
 0x4F    79  local IP - string
@@ -97,7 +97,7 @@ HEX     DEC VALUE
 0x5C    92  always 00
 0x5B    93  always 00
 0x5E    94  always 01
-0x5F    95  always 01
-0x60    96  always 27
+0x5F    95  always 01 Sensor Type List?
+0x60    96  always 27 Sensor Type List?
 0x61    97  checksum
 0x62    98  always 15

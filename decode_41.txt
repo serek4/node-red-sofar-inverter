@@ -6,40 +6,40 @@ HEX     DEC VALUE
 0x01    1   always 1C (msg type -?)
 0x02    2   always 00
 0x03    3   always 10
-0x04    4   always 48 (msg type cd?)
-0x05    5   message nr? starts from 00(synced with server?)- uInt8
-0x06    6   message nr? starts from 01 - uInt8
+0x04    4   always 48 (msg type cd - ?)
+0x05    5   message nr starts from 00(synced with server?)- uInt8
+0x06    6   message nr starts from 01 - uInt8
 0x07    7   data loger SN - uInt32LE
 0x08    8   data loger SN
 0x09    9   data loger SN
 0x0A    10  data loger SN
-0x0B    11  always 01?
-0x0C    12  run time? - uInt32LE
-0x0D    13  run time?
-0x0E    14  run time?
-0x0F    15  run time?
+0x0B    11  always 01
+0x0C    12  total operation time? - uInt32LE
+0x0D    13  total operation time?
+0x0E    14  total operation time?
+0x0F    15  total operation time?
 0x10    16  ?
 0x11    17  always 00
 0x12    18  always 00
 0x13    19  always 00
-0x14    20  ? timestamp 17 days ago? - uInt32LE
-0x15    21  ? timestamp
-0x16    22  ? timestamp
-0x17    23  ? timestamp
-0x18    24  ?
-0x19    25  ?
-0x1A    26  ?
+0x14    20  ? timestamp 5x? - 15-03-2021 15:46:55? - uInt32LE
+0x15    21  ? timestamp 73
+0x16    22  ? timestamp 4F
+0x17    23  ? timestamp 60
+0x18    24  always 01
+0x19    25  always 01
+0x1A    26  always 0C -uInt32LE?
 0x1B    27  ?
-0x1C    28  ?
-0x1D    29  slowly incressing ? 16? 15?
+0x1C    28  ? incressing - uInt16LE
+0x1D    29  ? incressing cd 17? 16? 15?
 0x1E    30  always 00
-0x1F    31  00 or ?
+0x1F    31  00 or ? 4x uInt16LE or 2x uInt32LE?
 0x20    32  00 or ?
-0x21    33  00 or ?
-0x22    34  00 or ?
-0x23    35  00 or ?
-0x24    36  00 or ?
-0x25    37  00 or ?
-0x26    38  00 or ?
+0x21    33  always 00
+0x22    34  always 00
+0x23    35  00 or ? timestamp 5x?
+0x24    36  00 or ? timestamp 73
+0x25    37  00 or ? timestamp 4F
+0x26    38  00 or ? timestamp 60
 0x27    39  checksum
 0x28    40  always 15
