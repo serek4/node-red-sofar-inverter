@@ -22,23 +22,24 @@ HEX     DEC VALUE
 0x11    17  always 00
 0x12    18  always 00
 0x13    19  always 00
-0x14    20  ?
-0x15    21  ?
-0x16    22  ?
-0x17    23  ?
+0x14    20  ? timestamp 17 days ago? - uInt32LE
+0x15    21  ? timestamp
+0x16    22  ? timestamp
+0x17    23  ? timestamp
 0x18    24  ?
 0x19    25  ?
 0x1A    26  ?
 0x1B    27  ?
 0x1C    28  ?
-0x1D    29  slowly incressing ?
+0x1D    29  slowly incressing ? 16? 15?
 0x1E    30  always 00
 0x1F    31  00 or ?
 0x20    32  00 or ?
-0x22    33  00 or ?
-0x23    34  00 or ?
-0x24    35  00 or ?
-0x25    36  00 or ?
-0x26    37  00 or ?
-0x27    38  checksum
-0x28    39  always 15
+0x21    33  00 or ?
+0x22    34  00 or ?
+0x23    35  00 or ?
+0x24    36  00 or ?
+0x25    37  00 or ?
+0x26    38  00 or ?
+0x27    39  checksum
+0x28    40  always 15
