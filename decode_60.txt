@@ -3,12 +3,12 @@
 # checksum - add all bytes, exept first, last, and checksum itself, than mod 256
 HEX     DEC VALUE
 0x00    0   always a5
-0x01    1   always 2F (msg type - ?)
-0x02    2   always 00
-0x03    3   always 10
-0x04    4   always 43 (msg type cd - ?)
-0x05    5   message nr starts from 00(synced with server?)- uInt8
-0x06    6   message nr starts from 01 - uInt8
+0x01    1   always 2F msg length - excl msg header(0x00 - 0x0A), checksum and last byte
+0x02    2   always 00 msg length
+0x03    3   always 10 msg type - ?
+0x04    4   always 43 msg type - ?
+0x05    5   message nr - starts from 00(synced with server?)- uInt8
+0x06    6   message nr - starts from 01 - uInt8
 0x07    7   data loger SN - uInt32LE
 0x08    8   data loger SN
 0x09    9   data loger SN
