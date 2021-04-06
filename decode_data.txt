@@ -20,10 +20,10 @@ HEX     DEC VALUE
 0x0F    15  total operation time (sec)
 0x10    16  total operation time (sec)
 0x11    17  total operation time (sec)
-0x12    18  timer?  every ~306s? - uInt16LE (or uInt32LE?), reset after F429(3h intarval?) 41 and 73 msgs sended after?
-0x13    19  incressing by 1 every msg?
-0x14    20  always 00
-0x15    21  always 00
+0x12    18  timer - every >=10740s - uInt16LE (or uInt32LE?), reset after F429(3h intarval?) hello msg,41 and 73 msg sended after
+0x13    19  timer - every >=10740s
+0x14    20  timer - every >=10740s
+0x15    21  timer - every >=10740s
 0x16    22  timestamp? 5x? - 15-03-21 15:46:52? - uInt32LE
 0x17    23  timestamp? 73
 0x18    24  timestamp? 4F
