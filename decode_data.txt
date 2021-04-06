@@ -16,10 +16,10 @@ HEX     DEC VALUE
 0x0B    11  always 01 (81?)
 0x0C    12  always 01
 0x0D    13  always 27
-0x0E    14  ?
-0x0F    15  incressing by 1 every msg - uInt16LE
-0x10    16  incressing by 1 every msg
-0x11    17  always 00
+0x0E    14  total operation time (sec) - uInt32LE
+0x0F    15  total operation time (sec)
+0x10    16  total operation time (sec)
+0x11    17  total operation time (sec)
 0x12    18  timer?  every ~306s? - uInt16LE (or uInt32LE?), reset after F429(3h intarval?) 41 and 73 msgs sended after?
 0x13    19  incressing by 1 every msg?
 0x14    20  always 00
