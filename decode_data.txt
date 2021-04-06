@@ -6,7 +6,7 @@ HEX     DEC VALUE
 0x01    1   always 97 (msg type - data)
 0x02    2   always 00
 0x03    3   always 10
-0x04    3   always 42 (msg type cd - data)
+0x04    4   always 42 (msg type cd - data)
 0x05    5   message nr starts from 00(synced with server?)- uInt8
 0x06    6   message nr starts from 01 - uInt8
 0x07    7   data loger SN - uInt32LE
@@ -101,7 +101,7 @@ HEX     DEC VALUE
 0x60    96  always 00
 0x61    97  always 00
 0x62    98  always 00
-0x63    88  always 00
+0x63    99  always 00
 0x64    100 always 00
 0x65    101 always 00
 0x66    102 always 00
@@ -110,10 +110,10 @@ HEX     DEC VALUE
 0x69    105 inverter firmware? - string
 0x6A    106 inverter firmware? - string
 0x6B    107 inverter firmware? - string
-0x6C    108 always V100? - string (4)
-0x6D    109 always V100? - string
-0x6E    110 always V100? - string
-0x6F    111 always V100? - string
+0x6C    108 hardware version - string (4)
+0x6D    109 hardware version - string
+0x6E    110 hardware version - string
+0x6F    111 hardware version - string
 0x70    112 logger temperature (°C) - int16LE?
 0x71    113 logger temperature (°C)
 0x72    114 Bus voltage/10 (V)
@@ -132,7 +132,7 @@ HEX     DEC VALUE
 0x7F    127 PV2 insulation resistance
 0x80    128 insulation impedance - catode to ground
 0x81    129 insulation impedance - catode to ground
-0x82    130 always 0C
+0x82    130 country - uInt8 or uInt16LE
 0x83    131 always 00
 0x84    132 always 00
 0x85    133 always 00

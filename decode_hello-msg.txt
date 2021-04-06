@@ -95,7 +95,7 @@ HEX     DEC VALUE
 0x5A    90  local IP - string
 0x5B    91  always 00
 0x5C    92  always 00
-0x5B    93  always 00
+0x5D    93  always 00
 0x5E    94  always 01
 0x5F    95  always 01 Sensor Type List?
 0x60    96  always 27 Sensor Type List?
