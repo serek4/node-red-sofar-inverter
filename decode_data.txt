@@ -146,22 +146,22 @@ HEX     DEC VALUE
 0x8D    141 B-phase DC distribution
 0x8E    142 C-phase DC distribution
 0x8F    143 C-phase DC distribution
-0x90    144 inverter firmware? - string (4)
-0x91    145 inverter firmware? - string
-0x92    146 inverter firmware? - string
-0x93    147 inverter firmware? - string
-0x94    148 inverter firmware? - string (4)
-0x95    149 inverter firmware? - string
-0x96    150 inverter firmware? - string
-0x97    151 inverter firmware? - string
+0x90    144 main inverter firmware - string (4)
+0x91    145 main inverter firmware - string
+0x92    146 main inverter firmware - string
+0x93    147 main inverter firmware - string
+0x94    148 slave inverter firmware - string (4)
+0x95    149 slave inverter firmware - string
+0x96    150 slave inverter firmware - string
+0x97    151 slave inverter firmware - string
 0x98    152 year - int8
 0x99    153 month - int8
 0x9A    154 day - int8
 0x9B    155 hour - int8
 0x9C    156 minute - int8
 0x9D    157 second - int8
-0x9E    158 ? counting up but not regular - uint16LE (or uInt32LE?)
-0x9F    159 ? counting up but not regular
+0x9E    158 ? changes with the current power - uint16LE (or uInt32LE?)
+0x9F    159 ? changes with the current power
 0xA0    160 always 00
 0xA1    161 always 00
 0xA2    162 checksum
