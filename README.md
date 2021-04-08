@@ -7,24 +7,28 @@
 
 ## node-red settings
 
-import `node-red-flow.json` in node-red
-
-it is setup to get messages from inverter and send them to solarmanpv.com aswell  
-if you don't want to use home.solarman.cn (or m.ginlong.com) site  
-you can disconnect `solarmanpv.com(TCP request node)`  
-and connect `generate response(function node)` instead
+import `node-red-flow.json` in node-red  
+![advanced settings](/images/node-red-KTL-X-server-flow.png)  
 
 ## wifi stick settings
 
 go to http://\<wifi stick local IP\>  
 in advanced tab set server B to `<node-red IP>` on port `10000` `TCP`  
+![advanced settings](/images/wifi-stick-advanced-settings.png)  
+
 thats it.
 
 ## but if node-red did not connect to inverter
 
 if `Inverter stick out(TCP in node)` did not connect  
 go to http://\<wifi stick local IP\>/config_hide.html  
-and change server A (default server) to `<node-red IP>`
+and change server A (default server) to `<node-red IP>`  
+![advanced settings](/images/wifi-stick-hiden-menu.png)  
+
+if you want to still send data to solarmanpv.com (or m.ginlong.com) site aswell  
+you can disconnect `generate response(function node)`   
+and connect `solarmanpv.com(TCP request node)` instead 
+![advanced settings](/images/node-red-KTL-X-proxy-flow.png)  
 
 ---
 ## messages flow
