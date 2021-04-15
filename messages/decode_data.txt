@@ -90,11 +90,11 @@ HEX     DEC VALUE
 0x55    85  total time (h)
 0x56    86  total time (h)
 0x57    87  total time (h)
-0x58    88  ? inverter status ? 02 - normal operation, 00 - standby
+0x58    88  ? inverter status ? 02 - normal operation, 00 - standby, 03 - fault
 0x59    89  always 00
 0x5A    90  always 00
 0x5B    91  always 00
-0x5C    92  always 00
+0x5C    92  fault code
 0x5D    93  always 00
 0x5E    94  always 00
 0x5F    95  always 00
