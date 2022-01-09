@@ -100,7 +100,7 @@ default value type is uInt16LE
 | 0x5A 	| 90  	| uInt8    	| [fault code](fault-code_data-0x5A.md)                                                                     	|
 | 0x5B 	| 91  	| uInt8    	| [fault code](fault-code_data-0x5B.md)                                                                     	|
 | 0x5C 	| 92  	| uInt8    	| [fault code](fault-code_data-0x5C.md)                                                                     	|
-| 0x5D 	| 93  	| uInt16LE 	| always 00                                                                                                 	|
+| 0x5D 	| 93  	| uInt8    	| [fault code](fault-code_data-0x5D.md)                                                                     	|
 | 0x5E 	| 94  	| uInt16LE 	| always 00                                                                                                 	|
 | 0x5F 	| 95  	| uInt16LE 	| always 00                                                                                                 	|
 | 0x60 	| 96  	| uInt16LE 	| always 00                                                                                                 	|
