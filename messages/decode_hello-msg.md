@@ -1,4 +1,4 @@
-# hello mesage
+# hello message
 ##### [back to readme](../README.md)  
 V5 table  
 99 bytes   
@@ -13,17 +13,17 @@ default value type is uInt16LE
 | 0x04 	| 4   	| uInt16LE 	| always 41 msg type - hello msg                                                                            	|
 | 0x05 	| 5   	| uInt8    	| message nr - starts from 00(synced with server?)                                                          	|
 | 0x06 	| 6   	| uInt8    	| message nr - starts from 01                                                                               	|
-| 0x07 	| 7   	| uInt32LE 	| data loger SN                                                                                             	|
-| 0x08 	| 8   	| uInt32LE 	| data loger SN                                                                                             	|
-| 0x09 	| 9   	| uInt32LE 	| data loger SN                                                                                             	|
-| 0x0A 	| 10  	| uInt32LE 	| data loger SN                                                                                             	|
+| 0x07 	| 7   	| uInt32LE 	| data logger SN                                                                                            	|
+| 0x08 	| 8   	| uInt32LE 	| data logger SN                                                                                            	|
+| 0x09 	| 9   	| uInt32LE 	| data logger SN                                                                                            	|
+| 0x0A 	| 10  	| uInt32LE 	| data logger SN                                                                                            	|
 | ---- 	| --- 	| -------- 	|                                                                                                           	|
 | 0x0B 	| 11  	| uInt8    	| always 01                                                                                                 	|
 | 0x0C 	| 12  	| uInt32LE 	| total operation time (sec)                                                                                	|
 | 0x0D 	| 13  	| uInt32LE 	| total operation time (sec)                                                                                	|
 | 0x0E 	| 14  	| uInt32LE 	| total operation time (sec)                                                                                	|
 | 0x0F 	| 15  	| uInt32LE 	| total operation time (sec)                                                                                	|
-| 0x10 	| 16  	| uInt32LE 	| timer - every >=10740s - (uInt16LE?) reset after F429(3h intarval?) hello msg,41 and 73 msg sended after  	|
+| 0x10 	| 16  	| uInt32LE 	| timer - every >=10740s - (uInt16LE?) reset after F429(3h interval?) hello msg,41 and 73 msg sended after  	|
 | 0x11 	| 17  	| uInt32LE 	| timer - every >=10740s                                                                                    	|
 | 0x12 	| 18  	| uInt32LE 	| timer - every >=10740s                                                                                    	|
 | 0x13 	| 19  	| uInt32LE 	| timer - every >=10740s                                                                                    	|
@@ -77,12 +77,12 @@ default value type is uInt16LE
 | 0x43 	| 67  	| string   	| module version - string                                                                                   	|
 | 0x44 	| 68  	| string   	| module version - string                                                                                   	|
 | 0x45 	| 69  	| string   	| module version - string                                                                                   	|
-| 0x46 	| 70  	| hex      	| STA mac addres (6)                                                                                        	|
-| 0x47 	| 71  	| hex      	| STA mac addres                                                                                            	|
-| 0x48 	| 72  	| hex      	| STA mac addres                                                                                            	|
-| 0x49 	| 73  	| hex      	| STA mac addres                                                                                            	|
-| 0x4A 	| 74  	| hex      	| STA mac addres                                                                                            	|
-| 0x4B 	| 75  	| hex      	| STA mac addres                                                                                            	|
+| 0x46 	| 70  	| hex      	| STA mac address (6)                                                                                       	|
+| 0x47 	| 71  	| hex      	| STA mac address                                                                                           	|
+| 0x48 	| 72  	| hex      	| STA mac address                                                                                           	|
+| 0x49 	| 73  	| hex      	| STA mac address                                                                                           	|
+| 0x4A 	| 74  	| hex      	| STA mac address                                                                                           	|
+| 0x4B 	| 75  	| hex      	| STA mac address                                                                                           	|
 | 0x4C 	| 76  	| string   	| local IP - string(15?) padded with 00 at end                                                              	|
 | 0x4D 	| 77  	| string   	| local IP - string                                                                                         	|
 | 0x4E 	| 78  	| string   	| local IP - string                                                                                         	|
@@ -105,5 +105,5 @@ default value type is uInt16LE
 | 0x5F 	| 95  	| uInt16LE 	| always 01 Sensor Type List?                                                                               	|
 | 0x60 	| 96  	| uInt16LE 	| always 27 Sensor Type List?                                                                               	|
 | ---- 	| --- 	| -------- 	|                                                                                                           	|
-| 0x61 	| 97  	| uInt8    	| checksum - add all bytes, exept first, last, and checksum itself, than mod 256                            	|
+| 0x61 	| 97  	| uInt8    	| checksum - add all bytes, except first, last, and checksum itself, than mod 256                           	|
 | 0x62 	| 98  	| uInt8    	| always 15                                                                                                 	|
