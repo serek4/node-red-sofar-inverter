@@ -96,9 +96,9 @@ default value type is uInt16LE
 | 0x56 	| 86  	| uInt32LE 	| total time (h)                                                                                            	|
 | 0x57 	| 87  	| uInt32LE 	| total time (h)                                                                                            	|
 | 0x58 	| 88  	| uInt8    	| inverter status: 00 - standby, 02 - normal operation, 03 - fault                                          	|
-| 0x59 	| 89  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x5A 	| 90  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x5B 	| 91  	| uInt16LE 	| always 00                                                                                                 	|
+| 0x59 	| 89  	| uInt8    	| always 00                                                                                                 	|
+| 0x5A 	| 90  	| uInt8    	| [fault code](fault-code_data-0x5A.md)                                                                     	|
+| 0x5B 	| 91  	| uInt8    	| always 00                                                                                                 	|
 | 0x5C 	| 92  	| uInt8    	| [fault code](fault-code_data-0x5C.md)                                                                     	|
 | 0x5D 	| 93  	| uInt16LE 	| always 00                                                                                                 	|
 | 0x5E 	| 94  	| uInt16LE 	| always 00                                                                                                 	|
