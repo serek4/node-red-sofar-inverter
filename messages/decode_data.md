@@ -101,16 +101,16 @@ default value type is uInt16LE
 | 0x5B 	| 91  	| uInt8    	| [fault code](fault-code_data-0x5B.md)                                                                     	|
 | 0x5C 	| 92  	| uInt8    	| [fault code](fault-code_data-0x5C.md)                                                                     	|
 | 0x5D 	| 93  	| uInt8    	| [fault code](fault-code_data-0x5D.md)                                                                     	|
-| 0x5E 	| 94  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x5F 	| 95  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x60 	| 96  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x61 	| 97  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x62 	| 98  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x63 	| 99  	| uInt16LE 	| always 00                                                                                                 	|
-| 0x64 	| 100 	| uInt16LE 	| always 00                                                                                                 	|
-| 0x65 	| 101 	| uInt16LE 	| always 00                                                                                                 	|
-| 0x66 	| 102 	| uInt16LE 	| always 00                                                                                                 	|
-| 0x67 	| 103 	| uInt16LE 	| always 00                                                                                                 	|
+| 0x5E 	| 94  	| uInt16LE 	| fault code?                                                                                               	|
+| 0x5F 	| 95  	| uInt16LE 	| fault code?                                                                                               	|
+| 0x60 	| 96  	| uInt16LE 	| fault code?                                                                                               	|
+| 0x61 	| 97  	| uInt16LE 	| fault code?                                                                                               	|
+| 0x62 	| 98  	| uInt16LE 	| fault code?                                                                                               	|
+| 0x63 	| 99  	| uInt16LE 	| fault code?                                                                                               	|
+| 0x64 	| 100 	| uInt16LE 	| alert msg code?                                                                                           	|
+| 0x65 	| 101 	| uInt16LE 	| alert msg code?                                                                                           	|
+| 0x66 	| 102 	| uInt16LE 	| inner board msg code?                                                                                     	|
+| 0x67 	| 103 	| uInt16LE 	| inner board msg code?                                                                                     	|
 | 0x68 	| 104 	| string   	| inverter firmware? - string (4)                                                                           	|
 | 0x69 	| 105 	| string   	| inverter firmware? - string                                                                               	|
 | 0x6A 	| 106 	| string   	| inverter firmware? - string                                                                               	|
