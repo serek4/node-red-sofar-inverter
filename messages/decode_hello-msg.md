@@ -23,8 +23,8 @@ default value type is uInt16LE
 | 0x0D 	| 13  	| uInt32LE 	| total operation time (sec)                                                                                	|
 | 0x0E 	| 14  	| uInt32LE 	| total operation time (sec)                                                                                	|
 | 0x0F 	| 15  	| uInt32LE 	| total operation time (sec)                                                                                	|
-| 0x10 	| 16  	| uInt32LE 	| timer - every >=10740s - (uInt16LE?) reset after F429(3h interval?) hello msg,41 and 73 msg sended after  	|
-| 0x11 	| 17  	| uInt32LE 	| timer - every >=10740s                                                                                    	|
+| 0x10 	| 16  	| uInt32LE 	| timer - every >=10740s - (uInt16LE?) reset after F429(3h interval?),                                      	|
+| 0x11 	| 17  	| uInt32LE 	| timer - every >=10740s - hello msg, data, hello_cd and hello_end msg sended after                         	|
 | 0x12 	| 18  	| uInt32LE 	| timer - every >=10740s                                                                                    	|
 | 0x13 	| 19  	| uInt32LE 	| timer - every >=10740s                                                                                    	|
 | 0x14 	| 20  	| uInt16LE 	| always 00                                                                                                 	|

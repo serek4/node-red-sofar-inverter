@@ -41,8 +41,8 @@ and connect `solarmanpv.com(TCP request node)` instead
 
 wifi stick ([hello msg](messages/decode_hello-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 wifi stick ([data msg](messages/decode_data.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
-wifi stick ([41bytes msg](messages/decode_41.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
-wifi stick ([73bytes msg](messages/decode_73.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
+wifi stick ([hello cd msg](messages/decode_hello_cd-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
+wifi stick ([hello end msg](messages/decode_hello_end-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 
 ### 120s interval:
 
@@ -56,8 +56,8 @@ wifi stick ([data msg](messages/decode_data.md)) -> server ([srv-response msg](m
 
 wifi stick ([hello msg](messages/decode_hello-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 wifi stick ([data msg](messages/decode_data.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
-wifi stick ([41bytes msg](messages/decode_41.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
-wifi stick ([73bytes msg](messages/decode_73.md)) ->server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick
+wifi stick ([hello cd msg](messages/decode_hello_cd-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
+wifi stick ([hello end msg](messages/decode_hello_end-msg.md)) ->server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick
 
 ### other messages:
 
