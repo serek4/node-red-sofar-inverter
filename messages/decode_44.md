@@ -13,10 +13,10 @@ default value type is uInt16LE
 | 0x04 	| 4   	| uInt16LE 	| always 48? msg type - ?                                                                                   	|
 | 0x05 	| 5   	| uInt8    	| message nr - starts from 00(synced with server?)                                                          	|
 | 0x06 	| 6   	| uInt8    	| message nr - starts from 01                                                                               	|
-| 0x07 	| 7   	| uInt32LE 	| data loger SN                                                                                             	|
-| 0x08 	| 8   	| uInt32LE 	| data loger SN                                                                                             	|
-| 0x09 	| 9   	| uInt32LE 	| data loger SN                                                                                             	|
-| 0x0A 	| 10  	| uInt32LE 	| data loger SN                                                                                             	|
+| 0x07 	| 7   	| uInt32LE 	| data logger SN                                                                                            	|
+| 0x08 	| 8   	| uInt32LE 	| data logger SN                                                                                            	|
+| 0x09 	| 9   	| uInt32LE 	| data logger SN                                                                                            	|
+| 0x0A 	| 10  	| uInt32LE 	| data logger SN                                                                                            	|
 | ---- 	| --- 	| -------- 	|                                                                                                           	|
 | 0x0B 	| 11  	| uInt16LE 	|                                                                                                           	|
 | 0x0C 	| 12  	| uInt16LE 	|                                                                                                           	|
@@ -50,5 +50,5 @@ default value type is uInt16LE
 | 0x28 	| 40  	| string   	| inverter SN - string [space]                                                                              	|
 | 0x29 	| 41  	| string   	| inverter SN - string [space]                                                                              	|
 | ---- 	| --- 	| -------- 	|                                                                                                           	|
-| 0x2A 	| 42  	| uInt8    	| checksum - add all bytes, exept first, last, and checksum itself, than mod 256                            	|
+| 0x2A 	| 42  	| uInt8    	| checksum - add all bytes, except first, last, and checksum itself, than mod 256                           	|
 | 0x2B 	| 43  	| uInt8    	| always 15                                                                                                 	|
