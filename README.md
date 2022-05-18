@@ -9,30 +9,28 @@
     SN: 174xxxxxxx
     firmware: LSW3_14_FFFF_1.0.34
 
-## node-red settings
-
-import [node-red-flow](node-red-flow.json) in node-red  
-![advanced settings](images/node-red-KTL-X-server-flow.png)  
-
 ## wifi stick settings
 
 go to `http://\<wifi stick local IP\>`  
 in advanced tab set server B to `<node-red IP>` on port `10000` `TCP`  
 ![advanced settings](images/wifi-stick-advanced-settings.png)  
 
-thats it.
+## node-red settings
 
-## but if node-red did not connect...
+import [node-red-subflow](node-red-subflow.json) to node-red, u will get sofar KTL-X node in subflow category  
+![subflow example](images/subflow-node-example.png)  
+now your `sofar KTL-X` node should have 1 connection and receive data  
 
-if `Inverter stick out(TCP in node)` did not connect  
+sofar KTL-X default properties  
+![subflow properties](images/subflow-properties.png)  
+by default node will listen on TCP port 10000, and will resend data to default solarmanpv.com server as well  
+
+## node-red did not connect
+
+if `sofar KTL-X` node do not have active connection  
 go to `http://\<wifi stick local IP\>/config_hide.html`  
 and change server A (default server) to `<node-red IP>`  
 ![advanced settings](images/wifi-stick-hidden-menu.png)  
-
-if you want to still send data to solarmanpv.com (or m.ginlong.com) site as well  
-you can disconnect `generate response(function node)`   
-and connect `solarmanpv.com(TCP request node)` instead  
-![advanced settings](images/node-red-KTL-X-proxy-flow.png)  
 
 ---
 ## messages flow
