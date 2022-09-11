@@ -1,8 +1,11 @@
 # data message
 ##### [back to readme](../README.md)
 V5 table
+
 232 bytes
+
 message type 0x2703
+
 default value type is uInt16LE
 
 | HEX  	| DEC 	| TYPE     	| VALUE                                                                                                     	|
