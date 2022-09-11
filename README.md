@@ -38,7 +38,7 @@ and change server A (default server) to `<node-red IP>`
 ### after power on:
 
 wifi stick ([hello msg](messages/decode_hello-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
-wifi stick ([data msg](messages/decode_data.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
+wifi stick ([KTL-X data msg](messages/decode_data.md) or [ME3000SP data msg](messages/decode_data_me3000sp.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 wifi stick ([hello cd msg](messages/decode_hello_cd-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 wifi stick ([hello end msg](messages/decode_hello_end-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 
@@ -53,7 +53,7 @@ wifi stick ([data msg](messages/decode_data.md)) -> server ([srv-response msg](m
 ### ~3h interval:
 
 wifi stick ([hello msg](messages/decode_hello-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
-wifi stick ([data msg](messages/decode_data.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
+wifi stick ([KTL-X data msg](messages/decode_data.md) or [ME3000SP data msg](messages/decode_data_me3000sp.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 wifi stick ([hello cd msg](messages/decode_hello_cd-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick  
 wifi stick ([hello end msg](messages/decode_hello_end-msg.md)) ->server ([srv-response msg](messages/decode_srv-response.md)) -> wifi stick
 
