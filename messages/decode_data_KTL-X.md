@@ -1,7 +1,8 @@
-# data message
+# KTL-X data message
 ##### [back to readme](../README.md)  
 V5 table  
 164 bytes   
+message type 0x2701  
 default value type is uInt16LE  
 
 | HEX  	| DEC 	| TYPE     	| VALUE                                                                                                     	|

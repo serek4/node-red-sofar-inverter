@@ -1,6 +1,6 @@
 # byte 0x5B(91 DEC) of data message
-##### [back to readme](../README.md) 
-##### [back to data msg](decode_data.md) 
+##### [back to readme](../README.md)
+##### [back to KTL-X data msg](decode_data_KTL-X.md)
 
 
 | bit      	| HEX   	| description                                          	|
