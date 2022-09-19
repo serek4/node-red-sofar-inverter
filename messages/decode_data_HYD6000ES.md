@@ -1,8 +1,8 @@
-# data message
+# HYD6000-ES data message
 ##### [back to readme](../README.md)
 V5 table  
 208 bytes  
-message type 0x2703  
+message type 0x2708  
 default value type is uInt16LE  
 
 | HEX  	| DEC 	| TYPE     	| VALUE                                                                                                     	|

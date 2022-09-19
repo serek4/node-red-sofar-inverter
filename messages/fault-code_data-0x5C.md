@@ -1,6 +1,6 @@
 # byte 0x5C(92 DEC) of data message
-##### [back to readme](../README.md) 
-##### [back to data msg](decode_data.md) 
+##### [back to readme](../README.md)
+##### [back to KTL-X data msg](decode_data_KTL-X.md)
 
 e.g. `0x0A = 0x08 + 0x02 -> GridUFP and GridUVP`
 
