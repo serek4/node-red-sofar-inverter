@@ -3,11 +3,11 @@
 - proxy data to default (solarmanpv.com (ginlong.com)) server
 - uses v5 data frames
 
-## Tested on:
+## supported devices:
 
-- LSW-3 data logger (`SN: 17xxxxxxxx` `firmware: LSW3_14_FFFF_1.0.34`) and **Sofar 4.4KTL-X**  
+- **Sofar 4.4KTL-X** with LSW-3 data logger (`SN: 17xxxxxxxx` `firmware: LSW3_14_FFFF_1.0.34`)  
 - **Sofar ME3000SP (RETROFIT ZST-3000SP)** added by [mattiarossi](https://github.com/mattiarossi)  
-- **Sofar HYD6000-ES** added by [daniel-pro](https://github.com/daniel-pro)  
+- **Sofar HYD6000-ES** with LSW-3 data logger (`SN: 23xxxxxxxx` `firmware: LSW3_15_FFFF_1.0.65`) added by [daniel-pro](https://github.com/daniel-pro)  
 
 ## wifi logger settings
 
