@@ -1,5 +1,5 @@
 # KTLX-G3 data message
-##### [back to readme](../README.md)  
+##### [back to readme](../README.md#data-messages)  
 V5 table  
 1445 bytes   
 message type 270A  

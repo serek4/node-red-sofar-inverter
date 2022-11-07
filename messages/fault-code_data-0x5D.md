@@ -1,5 +1,5 @@
 # byte 0x5D(93 DEC) of data message
-##### [back to readme](../README.md)
+##### [back to readme](../README.md#data-messages)
 ##### [back to KTL-X data msg](decode_data_KTL-X.md)
 
 

@@ -1,5 +1,5 @@
 # HYD6000-ES data message
-##### [back to readme](../README.md)
+##### [back to readme](../README.md#data-messages)
 V5 table  
 208 bytes  
 message type 0x2708  
