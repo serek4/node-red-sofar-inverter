@@ -1,5 +1,5 @@
 # heartbeat message
-##### [back to readme](../README.md)  
+##### [back to readme](../README.md#messages-flow)  
 V5 table  
 14 bytes   
 default value type is uInt16LE  
