@@ -8,6 +8,7 @@
 - **Sofar 4.4KTL-X** with LSW-3 data logger (`SN: 17xxxxxxxx` `firmware: LSW3_14_FFFF_1.0.34`)  
 - **Sofar ME3000SP (RETROFIT ZST-3000SP)** added by [mattiarossi](https://github.com/mattiarossi)  
 - **Sofar HYD6000-ES** with LSW-3 data logger (`SN: 23xxxxxxxx` `firmware: LSW3_15_FFFF_1.0.65`) added by [daniel-pro](https://github.com/daniel-pro)  
+- **Sofar 4.4KTLX-G3** with LSW-3 data logger (`SN: 23xxxxxxxx`) decoded by [grzegorzgrzeszkowiak](https://github.com/grzegorzgrzeszkowiak)  
 
 ## wifi logger settings
 
@@ -38,7 +39,7 @@ and change server A (default server) to `<node-red IP>`
 ### after power on:
 
 wifi logger ([hello msg](messages/decode_hello-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
-wifi logger ([KTL-X](messages/decode_data_KTL-X.md)/[ME3000SP](messages/decode_data_me3000sp.md)/[HYD6000ES](messages/decode_data_HYD6000ES.md) data msg) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
+wifi logger ([KTL-X](messages/decode_data_KTL-X.md)/[KTLX-G3](messages/decode_data_KTLX-G3.md)/[ME3000SP](messages/decode_data_me3000sp.md)/[HYD6000ES](messages/decode_data_HYD6000ES.md) data msg) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
 wifi logger ([hello cd msg](messages/decode_hello_cd-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
 wifi logger ([hello end msg](messages/decode_hello_end-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
 
@@ -48,12 +49,12 @@ wifi logger ([heartbeat msg](messages/decode_heartbeat.md)) -> server ([srv-resp
 
 ### 5min interval:
 
-wifi logger ([KTL-X](messages/decode_data_KTL-X.md)/[ME3000SP](messages/decode_data_me3000sp.md)/[HYD6000ES](messages/decode_data_HYD6000ES.md) data msg) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
+wifi logger ([KTL-X](messages/decode_data_KTL-X.md)/[KTLX-G3](messages/decode_data_KTLX-G3.md)/[ME3000SP](messages/decode_data_me3000sp.md)/[HYD6000ES](messages/decode_data_HYD6000ES.md) data msg) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
 
 ### ~3h interval:
 
 wifi logger ([hello msg](messages/decode_hello-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
-wifi logger ([KTL-X](messages/decode_data_KTL-X.md)/[ME3000SP](messages/decode_data_me3000sp.md)/[HYD6000ES](messages/decode_data_HYD6000ES.md) data msg) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
+wifi logger ([KTL-X](messages/decode_data_KTL-X.md)/[KTLX-G3](messages/decode_data_KTLX-G3.md)/[ME3000SP](messages/decode_data_me3000sp.md)/[HYD6000ES](messages/decode_data_HYD6000ES.md) data msg) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
 wifi logger ([hello cd msg](messages/decode_hello_cd-msg.md)) -> server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger  
 wifi logger ([hello end msg](messages/decode_hello_end-msg.md)) ->server ([srv-response msg](messages/decode_srv-response.md)) -> wifi logger
 
