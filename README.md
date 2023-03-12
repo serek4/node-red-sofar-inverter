@@ -9,6 +9,9 @@
 - **Sofar ME3000SP (RETROFIT ZST-3000SP)** added by [mattiarossi](https://github.com/mattiarossi)  
 - **Sofar HYD6000-ES** with LSW-3 data logger (`SN: 23xxxxxxxx` `firmware: LSW3_15_FFFF_1.0.65`) added by [daniel-pro](https://github.com/daniel-pro)  
 - **Sofar 4.4KTLX-G3** with LSW-3 data logger (`SN: 23xxxxxxxx`) decoded by [grzegorzgrzeszkowiak](https://github.com/grzegorzgrzeszkowiak)  
+- **Sofar HYD 10KTL-3PH** works (no info about data) [#12](https://github.com/serek4/node-red-sofar-inverter/issues/12)  
+- **Sofar HYD 5KTL-EP** uses the same data frame as **Sofar 4.4KTLX-G3**, no battery info decoded [#13](https://github.com/serek4/node-red-sofar-inverter/issues/13)  
+
 
 ## wifi logger settings
 
@@ -37,7 +40,7 @@ and change server A (default server) to `<node-red IP>`
 ## data messages
 
 - Sofar [KTL-X](messages/decode_data_KTL-X.md)
-- Sofar [KTLX-G3](messages/decode_data_KTLX-G3.md)
+- Sofar [KTLX-G3 / HYD KTL-EP](messages/decode_data_KTLX-G3.md)
 - Sofar [ME3000SP](messages/decode_data_me3000sp.md)
 - Sofar [HYD6000-ES](messages/decode_data_HYD6000ES.md)
 
